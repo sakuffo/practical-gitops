@@ -94,3 +94,5 @@ resource "aws_instance" "apache2_server" {
 output "public_ip" {
   value = aws_instance.apache2_server.public_ip
 }
+
+
