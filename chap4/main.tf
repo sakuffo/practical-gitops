@@ -70,6 +70,9 @@ resource "aws_instance" "apache2_server" {
     "Name" = "ec2-${local.name-suffix}"
   }
 
+  depends_on = [
+    module.generic_sg_egress
+  ]
   # lifecycle {
   #   prevent_destroy = true
   # }

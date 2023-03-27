@@ -9,13 +9,7 @@ terraform {
 
   required_version = ">= 1.1.0"
 
-  cloud {
-    organization = "saku-gitops"
 
-    workspaces {
-      name = "saku-gitops-aws-ec2"
-    }
-  }
 }
 
 # AWS Provider configuration
